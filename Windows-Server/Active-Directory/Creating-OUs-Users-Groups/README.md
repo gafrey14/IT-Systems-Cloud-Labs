@@ -11,19 +11,28 @@ Build a hierarchical Active Directory structure, create a sample IT administrato
 
 ## Tasks Completed
 
-### 1. Created Organizational Units
+### 1. Created Organizational Units using Powershell
 Created a parent OU named `Europe` with child OUs for:
 - Brussels
 - Amsterdam
 - Antwerp
 
+![PowerShell commands used to create organizational units](screenshots/Powershell-OU-Creation.png)
+
+![Active Directory organizational unit hierarchy](screenshots/OU%20Heirarchy.png)
+
+
 Created additional `Users` and `Computers` OUs within the city structure, and created an `IT Groups` OU to organize IT-related security groups.
 
 ### 2. Created a User Account
 Created a sample IT administrator user account in the Amsterdam `Users` OU.
+![Sample IT administrator user account](screenshots/User-Account.png)
+
 
 ### 3. Created a Security Group
 Created the `Europe Group IT Admins` security group in the `IT Groups` OU and added the sample IT administrator account as a member.
+![Europe Group IT Admins security group](screenshots/Security%20Group.png)
+
 
 ### 4. Delegated Control
 Used the Delegation of Control Wizard to delegate selected user and group management tasks:
@@ -32,6 +41,7 @@ Used the Delegation of Control Wizard to delegate selected user and group manage
 - Read user information
 - Create, delete, and manage groups
 - Modify group membership
+![Selected delegated administration permissions](screenshots/Delegation%20Permissions.png)
 
 The delegation wizard completed successfully. Delegated permissions apply within the configured scope; verify the target OU and group assignment when reviewing the lab.
 
@@ -47,19 +57,4 @@ Created a hierarchical OU structure, a sample user account, a security group, an
 ## Skills Demonstrated
 Active Directory administration, OU design, user and group management, PowerShell, delegated administration, and least-privilege concepts.
 
-## Screenshots
 
-### Organizational Unit Hierarchy
-![Active Directory organizational unit hierarchy](screenshots/OU%20Heirarchy.png)
-
-### PowerShell OU Creation
-![PowerShell commands used to create organizational units](screenshots/Powershell-OU-Creation.png)
-
-### User Account
-![Sample IT administrator user account](screenshots/User-Account.png)
-
-### Security Group
-![Europe Group IT Admins security group](screenshots/Security%20Group.png)
-
-### Delegated Permissions
-![Selected delegated administration permissions](screenshots/Delegation%20Permissions.png)
