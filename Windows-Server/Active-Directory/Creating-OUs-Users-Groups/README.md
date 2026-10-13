@@ -46,3 +46,20 @@ Created a hierarchical OU structure, a sample user account, a security group, an
 
 ## Skills Demonstrated
 Active Directory administration, OU design, user and group management, PowerShell, delegated administration, and least-privilege concepts.
+
+## Screenshots
+
+### Organizational Unit Hierarchy
+![Active Directory organizational unit hierarchy](screenshots/OU%20Heirarchy.png)
+
+### PowerShell OU Creation
+![PowerShell commands used to create organizational units](screenshots/Powershell-OU-Creation.png)
+
+### User Account
+![Sample IT administrator user account](screenshots/User-Account.png)
+
+### Security Group
+![Europe Group IT Admins security group](screenshots/Security%20Group.png)
+
+### Delegated Permissions
+![Selected delegated administration permissions](screenshots/Delegation%20Permissions.png)
