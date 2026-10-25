@@ -9,23 +9,30 @@ Create and configure a Group Policy Object (GPO) in an Active Directory lab to r
 - **Target OU:** `Europe > Amsterdam`
 - **Tool:** Group Policy Management Console (GPMC)
 
-## Procedure
-1. Opened **Group Policy Management** and created a new GPO to restrict Control Panel access.
-2. Opened the Group Policy Management Editor and navigated to **User Configuration > Policies > Administrative Templates > Control Panel**.
-3. Set **Prohibit access to Control Panel and PC settings** to **Enabled**.
-4. Linked the GPO to the **Amsterdam** OU.
-5. Tested the policy and observed that access to Control Panel was restricted.
+## Procedure and screenshot evidence
+
+### 1. Create the Group Policy Object
+Opened **Group Policy Management** and created a new GPO for restricting access to Control Panel.
+
+![Creating the Group Policy Object](screenshots/Creating%20the%20policy.png)
+
+### 2. Enable the Control Panel restriction
+In the Group Policy Management Editor, navigated to **User Configuration > Policies > Administrative Templates > Control Panel** and enabled **Prohibit access to Control Panel and PC settings**.
+
+![Enabling the Control Panel restriction policy](screenshots/Enabling%20the%20policy.png)
+
+### 3. Link the GPO to the Amsterdam OU
+Linked the configured GPO to the **Amsterdam** organizational unit within **Europe**.
+
+![Linking the Group Policy Object](screenshots/Linking%20the%20policy.png)
+
+### 4. Verify restricted access
+Tested access to Control Panel and observed that access was denied, confirming the restriction was applied in the lab.
+
+![Denied access to Control Panel](screenshots/Denied%20Access%20to%20control%20panel.png)
 
 ## Results
-The Control Panel restriction was configured and a screenshot was captured showing restricted access. This demonstrates creating, configuring, linking, and testing a user-based Group Policy in an Active Directory environment.
-
-## Screenshots (pending upload)
-The following screenshots were captured during the lab but have **not yet been uploaded to this repository**:
-
-- **Policy configuration:** The Control Panel restriction setting shown as **Enabled**.
-- **Restriction test:** The message or screen showing Control Panel access was restricted.
-
-Once the screenshots are uploaded, place them in a `screenshots/` folder alongside this README and add relative Markdown image links here. A screenshot of the GPO link to Amsterdam can also be added if available.
+Created, configured, linked, and tested a user-based Group Policy Object that restricts access to Windows Control Panel. The screenshots above document each stage of the exercise.
 
 ## Skills demonstrated
 - Group Policy Object (GPO) creation and configuration
