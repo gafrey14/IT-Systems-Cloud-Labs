@@ -40,4 +40,4 @@ Created, configured, linked, and tested a user-based Group Policy Object that re
 - Centralized user configuration and access restrictions
 - Verifying policy behavior in an Active Directory lab
 
-> **Note:** This is a practice lab. Do not publish actual passwords or other credentials in screenshots or files.
+
